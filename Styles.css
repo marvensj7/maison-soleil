@@ -1,0 +1,61 @@
+/* ==========================================================================
+   1. DESIGN TOKENS 
+   ========================================================================== */
+:root {
+  /* Neutrals */
+  --neutral-900: hsl(33, 15%, 15%);
+  --neutral-800: hsl(33, 22%, 20%);
+  --neutral-700: hsl(32, 20%, 29%);
+  --neutral-600: hsl(33, 17%, 41%);
+  --neutral-400: hsl(36, 22%, 86%);
+  --neutral-200: hsl(30, 24%, 93%);
+  --neutral-100: hsl(35, 60%, 96%);
+  --neutral-50:  hsl(40, 60%, 98%);
+  --neutral-0:   hsl(0, 0%, 100%);
+ 
+  /* Sun */
+  --sun-500: hsl(42, 83%, 58%);
+  --sun-300: hsl(44, 84%, 75%);
+  --sun-200: hsl(45, 100%, 74%);
+  --sun-50:  hsl(41, 100%, 93%);
+ 
+  /* Terracotta */
+  --terracotta-700: hsl(15, 69%, 37%);
+  --terracotta-600: hsl(15, 74%, 41%);
+  --terracotta-500: hsl(18, 62%, 47%);
+  --terracotta-400: hsl(22, 72%, 56%);
+ 
+  /* Accents */
+  --blue-500: hsl(230, 49%, 56%);
+  --rose-500: hsl(340, 48%, 52%);
+ 
+  --bs-body-bg: var(--neutral-50);
+  --bs-body-color: var(--neutral-700);
+  --bs-body-font-family: 'DM Sans', system-ui, sans-serif;
+  --bs-body-font-size: 0.875rem;          /* 14px, per style guide */
+  --bs-border-color: var(--neutral-400);
+}
+ 
+/* ==========================================================================
+   2. TYPE & COLOR HELPERS 
+   ========================================================================== */
+.font-display { font-family: 'Fraunces', Georgia, serif; }
+.font-mono    { font-family: 'DM Mono', monospace; }
+.fw-medium    { font-weight: 500; }
+ 
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.6875rem;   /* 11px */
+}
+ 
+.text-ink       { color: var(--neutral-900) !important; }
+.text-ink-soft  { color: var(--neutral-600) !important; }
+.text-ink-mute  { color: var(--neutral-600) !important; opacity: 0.75; }
+.text-terracotta{ color: var(--terracotta-600) !important; }
+.text-blue      { color: var(--blue-500) !important; }
+.text-rose      { color: var(--rose-500) !important; }
+.text-sun       { color: var(--sun-300) !important; }
+.text-cream     { color: var(--neutral-50) !important; }
+.text-cream-soft{ color: hsl(41, 100%, 93%, 0.82) !important; }
+ 
