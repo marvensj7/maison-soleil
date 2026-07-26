@@ -18,5 +18,91 @@
 
 <body>
 
+  <nav class="navbar d-lg-none px-4 py-3 border-bottom mobile-bar">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+      <img src="images/logo.svg" alt="" height="34">
+      <span class="wordmark lh-1">
+        <span class="font-display fst-italic text-terracotta d-block">Maison</span>
+        <span class="font-display fw-medium text-ink d-block">Soleil</span>
+      </span>
+    </a>
+    <button class="btn border p-2 lh-1 rounded-3" type="button"
+            data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu"
+            aria-controls="sidebarMenu" aria-label="Open menu">
+      <img src="images/icon-menu.svg" alt="" width="20" height="20">
+    </button>
+  </nav>
+ 
+  <div class="app d-lg-flex">
+ 
+    <aside class="offcanvas-lg offcanvas-start sidebar d-flex flex-column p-4" tabindex="-1" id="sidebarMenu">
+ 
+      <div class="offcanvas-header d-lg-none px-0 pt-0">
+        <a class="d-flex align-items-center gap-2" href="#">
+          <img src="images/logo.svg" alt="" height="34">
+          <span class="wordmark lh-1">
+            <span class="font-display fst-italic text-terracotta d-block">Maison</span>
+            <span class="font-display fw-medium text-ink d-block">Soleil</span>
+          </span>
+        </a>
+        <button type="button" class="btn border p-2 lh-1 rounded-3" data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu" aria-label="Close">
+          <img src="images/icon-close.svg" alt="" width="20" height="20">
+        </button>
+      </div>
+ 
+      <div class="offcanvas-body d-flex flex-column p-0">
+ 
+        <!-- Logo (desktop) -->
+        <a class="d-none d-lg-flex align-items-center gap-2 text-decoration-none mb-4 pb-2 border-bottom" href="#">
+          <img src="images/logo.svg" alt="" height="38">
+          <span class="wordmark lh-1">
+            <span class="font-display fst-italic text-terracotta d-block fs-5">Maison</span>
+            <span class="font-display fw-medium text-ink d-block fs-5">Soleil</span>
+          </span>
+        </a>
+ 
+        <!-- Primary nav -->
+        <nav class="nav flex-column gap-1">
+          <a class="nav-link nav-item-row active d-flex align-items-center gap-3" aria-current="page" href="#">
+            <img src="images/icon-bed.svg" alt="" width="20" height="20">
+            <span class="flex-grow-1">Your stay</span>
+            <span class="badge badge-count">1</span>
+          </a>
+          <a class="nav-link nav-item-row d-flex align-items-center gap-3" href="#">
+            <img src="images/icon-house.svg" alt="" width="20" height="20">
+            <span>The house</span>
+          </a>
+          <a class="nav-link nav-item-row d-flex align-items-center gap-3" href="#">
+            <img src="images/icon-pin.svg" alt="" width="20" height="20">
+            <span>Around town</span>
+          </a>
+          <a class="nav-link nav-item-row d-flex align-items-center gap-3" href="#">
+            <img src="images/icon-breakfast-outline.svg" alt="" width="20" height="20">
+            <span>Breakfast</span>
+          </a>
+          <a class="nav-link nav-item-row d-flex align-items-center gap-3" href="#">
+            <img src="images/icon-mail.svg" alt="" width="20" height="20">
+            <span>Messages</span>
+          </a>
+        </nav>
+ 
+        <!-- Weather widget -->
+        <div class="weather rounded-4 p-3 mt-4 position-relative overflow-hidden">
+          <img src="images/icon-weather.svg" alt="" class="weather-orb position-absolute top-0 end-0">
+          <p class="font-mono eyebrow text-ink-soft mb-2">Today in Cassis</p>
+          <p class="font-display display-temp text-ink mb-0 lh-1">27&deg;</p>
+          <p class="small text-ink-soft mb-0 mt-1">Sunny &middot; light breeze</p>
+        </div>
+ 
+        <!-- Footer -->
+        <footer class="mt-auto pt-4 font-mono text-ink-mute footnote">
+          <p class="mb-2">Est. 1987</p>
+          <p class="mb-2">Maison Soleil &middot; 12 Rue des Oliviers &middot; Cassis</p>
+          <p class="mb-0">&copy; 2026 Maison Soleil</p>
+        </footer>
+ 
+      </div>
+    </aside>
+
 </body>
 </html>
