@@ -109,104 +109,183 @@
             </div>
         </aside>
 
- <!-- ============ MAIN CONTENT ============ -->
-    <main class="content flex-grow-1 px-4 px-lg-5 py-5">
- 
-      <!-- Header row -->
-      <div class="d-flex flex-column flex-lg-row justify-content-between align-items-start gap-4 mb-5">
-        <div>
-          <p class="font-mono eyebrow text-ink-soft mb-3">Booking &middot; Confirmed</p>
-          <h1 class="font-display headline mb-0">
-            Bienvenue, <span class="fst-italic text-terracotta">Lucia.</span>
-          </h1>
-        </div>
-        <div class="d-flex gap-3 flex-shrink-0">
-          <button class="btn btn-ghost rounded-pill px-4">Print receipt</button>
-          <button class="btn btn-ink rounded-pill px-4">Add to calendar</button>
-        </div>
-      </div>
- 
-      <!-- Fanned cards -->
-      <div class="fan mb-2">
- 
-        <!-- Receipt card -->
-        <article class="fan-card receipt-card card border-0 rounded-4 p-4 p-lg-5">
-          <div class="d-flex justify-content-between align-items-start mb-4">
-            <h2 class="font-display fs-3 text-ink mb-0 order-lg-1">Your stay</h2>
-            <p class="font-mono small text-ink-mute text-end mb-0 order-lg-2 lh-sm">
-              &#8470; MS-2026<br>0421-AH
-            </p>
-          </div>
- 
-          <div class="row g-0 mb-4">
-            <div class="col-6">
-              <p class="font-mono eyebrow text-ink-mute mb-1">Check in</p>
-              <p class="font-display fs-2 text-ink mb-0 lh-1">25 Apr</p>
-              <p class="font-mono small text-ink-mute mb-0 mt-1">Saturday &middot; 15:00</p>
-            </div>
-            <div class="col-6">
-              <p class="font-mono eyebrow text-ink-mute mb-1">Check out</p>
-              <p class="font-display fs-2 text-ink mb-0 lh-1">29 Apr</p>
-              <p class="font-mono small text-ink-mute mb-0 mt-1">Wednesday &middot; 11:00</p>
-            </div>
-          </div>
- 
-          <ul class="list-unstyled line-items mb-0">
-            <li class="d-flex justify-content-between align-items-baseline py-1">
-              <span class="text-ink-soft">Room &middot; La Garrigue &times; 4 nights</span>
-              <span class="font-mono text-ink">&euro; 620.00</span>
-            </li>
-            <li class="d-flex justify-content-between align-items-baseline py-1">
-              <span class="text-ink-soft">Breakfast &times; 2 guests</span>
-              <span class="font-mono text-ink">&euro; 96.00</span>
-            </li>
-            <li class="d-flex justify-content-between align-items-baseline py-1">
-              <span class="text-ink-soft">Tourist tax</span>
-              <span class="font-mono text-ink">&euro; 14.40</span>
-            </li>
-          </ul>
- 
-          <hr class="receipt-rule my-3">
- 
-          <div class="d-flex justify-content-between align-items-baseline mb-4">
-            <span class="font-mono eyebrow text-ink-mute">Total paid</span>
-            <span class="font-display fs-3 text-ink">&euro; 730.40</span>
-          </div>
- 
-          <div class="d-flex justify-content-between align-items-end">
-            <span class="font-mono small text-ink-mute">Paid &middot; Wise &middot; GBP</span>
-            <img src="images/icon-barcode.svg" alt="Booking barcode" height="26">
-          </div>
-        </article>
- 
-        <!-- Welcome card -->
-        <article class="fan-card welcome-card card border-0 rounded-4 p-4 p-lg-5 text-cream">
-          <div class="d-flex justify-content-between align-items-start mb-4">
-            <p class="font-mono eyebrow text-cream-soft mb-0">Welcome card</p>
-            <img src="images/icon-sun.svg" alt="" width="40" height="40">
-          </div>
- 
-          <p class="font-display fst-italic fs-6 text-sun mb-1">A note from your host,</p>
-          <p class="font-display host-name mb-4 lh-1">Margaux.</p>
- 
-          <p class="host-note text-cream-soft mb-auto">
-            We&rsquo;re so glad you&rsquo;re coming. The shutters will be open, the lemonade cold,
-            and the cat &ndash; Poivre &ndash; pretending not to notice you.
-          </p>
- 
-          <div class="mt-4 pt-4">
-            <p class="font-mono eyebrow text-cream-soft mb-1">Room</p>
-            <p class="font-display fs-4 mb-0">La Garrigue</p>
-          </div>
-        </article>
- 
-      </div>
- 
-      <p class="text-center font-mono eyebrow text-ink-mute my-4 d-none d-lg-block">
-        &#10022; Hover to fan &#10022;
-      </p>
+        <!-- ============ MAIN CONTENT ============ -->
+        <main class="content flex-grow-1 px-4 px-lg-5 py-5">
 
-      
+            <!-- Header row -->
+            <div class="d-flex flex-column flex-lg-row justify-content-between align-items-start gap-4 mb-5">
+                <div>
+                    <p class="font-mono eyebrow text-ink-soft mb-3">Booking &middot; Confirmed</p>
+                    <h1 class="font-display headline mb-0">
+                        Bienvenue, <span class="fst-italic text-terracotta">Lucia.</span>
+                    </h1>
+                </div>
+                <div class="d-flex gap-3 flex-shrink-0">
+                    <button class="btn btn-ghost rounded-pill px-4">Print receipt</button>
+                    <button class="btn btn-ink rounded-pill px-4">Add to calendar</button>
+                </div>
+            </div>
+
+            <!-- Fanned cards -->
+            <div class="fan mb-2">
+
+                <!-- Receipt card -->
+                <article class="fan-card receipt-card card border-0 rounded-4 p-4 p-lg-5">
+                    <div class="d-flex justify-content-between align-items-start mb-4">
+                        <h2 class="font-display fs-3 text-ink mb-0 order-lg-1">Your stay</h2>
+                        <p class="font-mono small text-ink-mute text-end mb-0 order-lg-2 lh-sm">
+                            &#8470; MS-2026<br>0421-AH
+                        </p>
+                    </div>
+
+                    <div class="row g-0 mb-4">
+                        <div class="col-6">
+                            <p class="font-mono eyebrow text-ink-mute mb-1">Check in</p>
+                            <p class="font-display fs-2 text-ink mb-0 lh-1">25 Apr</p>
+                            <p class="font-mono small text-ink-mute mb-0 mt-1">Saturday &middot; 15:00</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="font-mono eyebrow text-ink-mute mb-1">Check out</p>
+                            <p class="font-display fs-2 text-ink mb-0 lh-1">29 Apr</p>
+                            <p class="font-mono small text-ink-mute mb-0 mt-1">Wednesday &middot; 11:00</p>
+                        </div>
+                    </div>
+
+                    <ul class="list-unstyled line-items mb-0">
+                        <li class="d-flex justify-content-between align-items-baseline py-1">
+                            <span class="text-ink-soft">Room &middot; La Garrigue &times; 4 nights</span>
+                            <span class="font-mono text-ink">&euro; 620.00</span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-baseline py-1">
+                            <span class="text-ink-soft">Breakfast &times; 2 guests</span>
+                            <span class="font-mono text-ink">&euro; 96.00</span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-baseline py-1">
+                            <span class="text-ink-soft">Tourist tax</span>
+                            <span class="font-mono text-ink">&euro; 14.40</span>
+                        </li>
+                    </ul>
+
+                    <hr class="receipt-rule my-3">
+
+                    <div class="d-flex justify-content-between align-items-baseline mb-4">
+                        <span class="font-mono eyebrow text-ink-mute">Total paid</span>
+                        <span class="font-display fs-3 text-ink">&euro; 730.40</span>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-end">
+                        <span class="font-mono small text-ink-mute">Paid &middot; Wise &middot; GBP</span>
+                        <img src="images/icon-barcode.svg" alt="Booking barcode" height="26">
+                    </div>
+                </article>
+
+                <!-- Welcome card -->
+                <article class="fan-card welcome-card card border-0 rounded-4 p-4 p-lg-5 text-cream">
+                    <div class="d-flex justify-content-between align-items-start mb-4">
+                        <p class="font-mono eyebrow text-cream-soft mb-0">Welcome card</p>
+                        <img src="images/icon-sun.svg" alt="" width="40" height="40">
+                    </div>
+
+                    <p class="font-display fst-italic fs-6 text-sun mb-1">A note from your host,</p>
+                    <p class="font-display host-name mb-4 lh-1">Margaux.</p>
+
+                    <p class="host-note text-cream-soft mb-auto">
+                        We&rsquo;re so glad you&rsquo;re coming. The shutters will be open, the lemonade cold,
+                        and the cat &ndash; Poivre &ndash; pretending not to notice you.
+                    </p>
+
+                    <div class="mt-4 pt-4">
+                        <p class="font-mono eyebrow text-cream-soft mb-1">Room</p>
+                        <p class="font-display fs-4 mb-0">La Garrigue</p>
+                    </div>
+                </article>
+
+            </div>
+
+            <p class="text-center font-mono eyebrow text-ink-mute my-4 d-none d-lg-block">
+                &#10022; Hover to fan &#10022;
+            </p>
+
+            <!-- Info cards -->
+            <div class="row g-4 mt-2">
+
+                <!-- Arrival -->
+                <div class="col-md-6 col-xl-4">
+                    <article class="card info-card h-100 border-0 rounded-4 p-4">
+                        <div class="d-flex align-items-center justify-content-between mb-4">
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="icon-badge icon-badge--terracotta d-inline-flex">
+                                    <img src="images/icon-key.svg" alt="" width="22" height="22">
+                                </span>
+                                <span class="font-mono eyebrow text-terracotta">Arrival</span>
+                            </div>
+                            <span class="font-display fs-4 text-terracotta lh-1">01</span>
+                        </div>
+                        <h3 class="font-display fs-3 text-ink mb-1">Check-in from 15:00</h3>
+                        <p class="font-mono small text-ink-mute mb-3">Sat, 25 April</p>
+                        <p class="text-ink-soft mb-0">
+                            Ring the brass bell by the blue door. If we&rsquo;re at the market,
+                            the key is in the terracotta pot by the olive tree.
+                        </p>
+                    </article>
+                </div>
+
+                <!-- Wifi -->
+                <div class="col-md-6 col-xl-4">
+                    <article class="card info-card h-100 border-0 rounded-4 p-4">
+                        <div class="d-flex align-items-center justify-content-between mb-4">
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="icon-badge icon-badge--blue d-inline-flex">
+                                    <img src="images/icon-wifi.svg" alt="" width="22" height="22">
+                                </span>
+                                <span class="font-mono eyebrow text-blue">Wifi</span>
+                            </div>
+                            <span class="font-display fs-4 text-blue lh-1">02</span>
+                        </div>
+                        <h3 class="font-display fs-3 text-ink mb-1">Le Soleil &middot; Guest</h3>
+                        <p class="font-mono small text-ink-mute mb-3">Password below</p>
+
+                        <div
+                            class="cred-row d-flex justify-content-between align-items-center rounded-3 px-3 py-2 mb-2">
+                            <span class="font-mono eyebrow text-ink-mute">Network</span>
+                            <span class="font-mono text-ink">Le Soleil &middot; Guest</span>
+                        </div>
+                        <div class="cred-row d-flex justify-content-between align-items-center rounded-3 px-3 py-2">
+                            <span class="font-mono eyebrow text-ink-mute">Password</span>
+                            <span class="d-flex align-items-center gap-2">
+                                <span class="font-mono text-ink">soleil-2026</span>
+                                <button class="btn btn-copy font-mono py-0 px-2">Copy</button>
+                            </span>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Breakfast -->
+                <div class="col-md-6 col-xl-4">
+                    <article class="card info-card h-100 border-0 rounded-4 p-4">
+                        <div class="d-flex align-items-center justify-content-between mb-4">
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="icon-badge icon-badge--rose d-inline-flex">
+                                    <img src="images/icon-breakfast.svg" alt="" width="22" height="22">
+                                </span>
+                                <span class="font-mono eyebrow text-rose">Breakfast</span>
+                            </div>
+                            <span class="font-display fs-4 text-rose lh-1">03</span>
+                        </div>
+                        <h3 class="font-display fs-3 text-ink mb-1">Served 8 &ndash; 10:30</h3>
+                        <p class="font-mono small text-ink-mute mb-3">On the terrace</p>
+                        <p class="text-ink-soft mb-0">
+                            Fresh figs, Marseille honey, pain au levain, and espresso.
+                            Gluten-free option? Leave a note the night before.
+                        </p>
+                    </article>
+                </div>
+
+            </div>
+
+        </main>
+    </div>
+
 </body>
 
 </html>
