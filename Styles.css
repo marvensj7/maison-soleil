@@ -59,3 +59,81 @@
 .text-cream     { color: var(--neutral-50) !important; }
 .text-cream-soft{ color: hsl(41, 100%, 93%, 0.82) !important; }
  
+/* ==========================================================================
+   3. BUTTONS
+   ========================================================================== */
+.btn-ink {
+  --bs-btn-bg: var(--neutral-900);
+  --bs-btn-border-color: var(--neutral-900);
+  --bs-btn-color: var(--neutral-50);
+  --bs-btn-hover-bg: var(--neutral-800);
+  --bs-btn-hover-border-color: var(--neutral-800);
+  --bs-btn-hover-color: var(--neutral-50);
+  --bs-btn-font-weight: 500;
+}
+.btn-ghost {
+  --bs-btn-bg: transparent;
+  --bs-btn-border-color: var(--neutral-400);
+  --bs-btn-color: var(--neutral-900);
+  --bs-btn-hover-bg: var(--neutral-100);
+  --bs-btn-hover-border-color: var(--neutral-600);
+  --bs-btn-hover-color: var(--neutral-900);
+  --bs-btn-font-weight: 500;
+}
+.btn-copy {
+  --bs-btn-bg: var(--neutral-0);
+  --bs-btn-border-color: var(--neutral-400);
+  --bs-btn-color: var(--neutral-600);
+  --bs-btn-hover-bg: var(--neutral-100);
+  --bs-btn-hover-color: var(--neutral-900);
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border: 1px solid var(--neutral-400);
+  border-radius: 0.4rem;
+}
+ 
+/* ==========================================================================
+   4. LAYOUT: sidebar + content
+   ========================================================================== */
+.mobile-bar { background: var(--neutral-50); }
+ 
+@media (min-width: 992px) {
+  .sidebar {
+    width: 280px;
+    flex-shrink: 0;
+    min-height: 100vh;
+    position: sticky;
+    top: 0;
+    background: var(--neutral-100);
+    border-right: 1px solid var(--neutral-400);
+  }
+}
+ 
+/* Sidebar nav rows */
+.nav-item-row {
+  color: var(--neutral-700);
+  font-weight: 500;
+  border-radius: 0.65rem;
+  padding: 0.65rem 0.85rem;
+}
+.nav-item-row:hover { background: var(--neutral-200); color: var(--neutral-900); }
+.nav-item-row.active {
+  background: var(--neutral-0);
+  color: var(--neutral-900);
+  box-shadow: 0 1px 2px hsl(33 15% 15% / 0.06);
+}
+.badge-count {
+  background: var(--terracotta-600);
+  color: var(--neutral-50);
+  border-radius: 50rem;
+}
+ 
+/* Weather widget */
+.weather {
+  background: linear-gradient(150deg, var(--sun-200), var(--sun-50));
+  border: 1px solid hsl(42 83% 58% / 0.35);
+}
+.weather-orb { width: 74px; height: 74px; transform: translate(18%, -18%); }
+.display-temp { font-size: 2.5rem; }
+.footnote { font-size: 0.625rem; letter-spacing: 0.06em; line-height: 1.7; }
