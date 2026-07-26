@@ -208,3 +208,9 @@
  
 .cred-row { background: var(--neutral-100); }
  
+/* ==========================================================================
+   8. MOBILE OFFCANVAS TWEAKS
+   ========================================================================== */
+@media (max-width: 991.98px) {
+  .offcanvas-lg { background: var(--neutral-100); width: 300px; }
+}
