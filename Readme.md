@@ -2,7 +2,6 @@
  
 A responsive implementation of the [Hotel booking confirmation page](https://www.frontendmentor.io/challenges/hotel-booking-confirmation-page) design challenge from Frontend Mentor, built with semantic HTML, Bootstrap 5, and a thin layer of custom CSS.
  
-**Live site:** https://marvensj7.github.io/maison-soleil/
 **Repository:** (https://github.com/marvensj7/maison-soleil)
  
 ## Overview
