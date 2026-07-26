@@ -137,3 +137,55 @@
 .weather-orb { width: 74px; height: 74px; transform: translate(18%, -18%); }
 .display-temp { font-size: 2.5rem; }
 .footnote { font-size: 0.625rem; letter-spacing: 0.06em; line-height: 1.7; }
+
+/* ==========================================================================
+   5. HEADER
+   ========================================================================== */
+.headline { font-size: clamp(2.25rem, 4vw, 3.25rem); color: var(--neutral-900); line-height: 1.05; }
+ 
+/* ==========================================================================
+   6. FANNED CARDS
+   ========================================================================== */
+.fan { position: relative; }
+.fan-card {
+  box-shadow: 0 24px 50px hsl(33 15% 15% / 0.10);
+}
+ 
+/* Receipt */
+.receipt-card { background: var(--neutral-0); }
+.receipt-rule { border-top: 1px solid var(--neutral-400); opacity: 1; }
+.line-items li { border-bottom: 1px dashed var(--neutral-400); }
+.line-items li:last-child { border-bottom: 0; }
+ 
+/* Welcome */
+.welcome-card {
+  background: linear-gradient(145deg, var(--terracotta-400) 0%, var(--terracotta-600) 55%, var(--terracotta-700) 100%);
+}
+.host-name { font-size: 2.75rem; }
+.host-note { font-size: 0.95rem; line-height: 1.65; max-width: 34ch; }
+ 
+/* --- Mobile stacking order: welcome above receipt --- */
+@media (max-width: 991.98px) {
+  .fan { display: flex; flex-direction: column; gap: 1.5rem; }
+  .receipt-card { order: 2; }
+  .welcome-card { order: 1; }
+}
+ 
+/* --- Desktop fan --- */
+@media (min-width: 992px) {
+  .fan { height: 500px; }
+  .fan-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 440px;
+    transition: transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1);
+    will-change: transform;
+  }
+  .receipt-card { transform: translate(-92%, -50%) rotate(-4deg); z-index: 1; }
+  .welcome-card { transform: translate(-8%, -50%) rotate(4deg);  z-index: 2; min-height: 440px; }
+ 
+  .fan:hover .receipt-card { transform: translate(-104%, -50%) rotate(-6deg); }
+  .fan:hover .welcome-card { transform: translate(4%,   -50%) rotate(6deg); }
+}
+ 
